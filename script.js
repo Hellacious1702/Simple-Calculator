@@ -36,6 +36,12 @@ function Clear(){
     input.value = '';
 }
 
+// Creating Copy Function
+function copyResult(){
+    input.select();
+    document.execCommand("copy");
+}
+
 function Button1(){
     input.value = input.value + '1';
 }

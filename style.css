@@ -9,6 +9,7 @@
     --Button-Primary-bg-color : #FFA500;
     --Button-Secondary-bg-color : #C0C6C8;
     --Button-Numerical-bg-color : #686A6C;
+    --copy-button-bg-color: #00FFFF;
 
     /* Defining Basic Properties */
     --primary-div-border-radius : 10px;
@@ -80,6 +81,16 @@ body{
     font-size: 20px;
 }
 
+/* Styling Copy Button */
+#copy{
+    padding: 10px;
+    border: var(--input-div-border);
+    border-radius: var(--input-div-border-radius);
+    font-size: 20px;
+    background-color: var(--copy-button-bg-color);
+    cursor: pointer;
+}
+
 /* Styling Calculator Button (Position)*/
 .calc-buttons{
     display: flex;
@@ -91,7 +102,7 @@ body{
 /* Styling Calculator Button */
 .calcButton-row-1 , .calcButton-row-2 , .calcButton-row-3 , .calcButton-row-4 , .calcButton-row-5{
     margin: 5px;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: var(--button-div-border-radius);
     font-size: 26px;
     background-color: var(--Button-Numerical-bg-color);
@@ -101,8 +112,8 @@ body{
 }
 
 /* Styling Clear and (0) Button */
-#button0 , #clear{
-    width: 140px;
+#button0 , #buttonclear{
+    width: 175px;
 }
 
 /* Styling Operational Button */
