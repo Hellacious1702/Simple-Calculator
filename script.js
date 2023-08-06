@@ -17,6 +17,9 @@ let butttonMinus = document.getElementById('buttonminus')
 let butttonDivide = document.getElementById('buttondivide');
 let butttonMultiply = document.getElementById('buttonmultiply');
 
+// Importing Audio based on ID
+let clickAudio = document.getElementById('click');
+
 // Deifing Result (To be used for Evaluate Function)
 let result = '';
 
@@ -24,6 +27,7 @@ let result = '';
 function Evaluate(){
     // Using the Result
     let result = eval(input.value);
+    clickAudio.play();
     if(result === undefined){
         input.value = 'Error404 T_T';
     }else{
@@ -33,75 +37,93 @@ function Evaluate(){
 
 // Creating Clear Function
 function Clear(){
+    clickAudio.play();
     input.value = '';
 }
 
 // Creating Copy Function
 function copyResult(){
+    clickAudio.play();
     input.select();
     document.execCommand("copy");
 }
 
 function Button1(){
     input.value = input.value + '1';
+    clickAudio.play();
 }
 
 function Button2(){
     input.value = input.value + '2';
+    clickAudio.play();
 }
 
 function Button3(){
     input.value = input.value + '3';
+    clickAudio.play();
 }
 
 function Button4(){
     input.value = input.value + '4';
+    clickAudio.play();
 }
 
 function Button5(){
     input.value = input.value + '5';
+    clickAudio.play();
 }
 
 function Button6(){
     input.value = input.value + '6';
+    clickAudio.play();
 }
 
 function Button7(){
     input.value = input.value + '7';
+    clickAudio.play();
 }
 
 function Button8(){
     input.value = input.value + '8';
+    clickAudio.play();
 }
 
 function Button9(){
     input.value = input.value + '9';
+    clickAudio.play();
 }
 
 function Button0(){
     input.value = input.value + '0';
+    clickAudio.play();
 }
 
 function ButtonPlus(){
     input.value = input.value + '+';
+    clickAudio.play();
 }
 
 function ButtonMinus(){
     input.value = input.value + '-';
+    clickAudio.play();
 }
 
 function ButtonDivide(){
     input.value = input.value + '/';
+    clickAudio.play();
 }
 
 function ButtonMultiply(){
     input.value = input.value + '*';
+    clickAudio.play();
 }
 
 function ButtonDecimal(){
     input.value = input.value + '.';
+    clickAudio.play();
 }
 
 function ButtonPercentage(){
     input.value = input.value/100;
+    clickAudio.play();
 }
