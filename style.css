@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=REM:wght@300&family=Tektur:wght@800&display=swap');
+:root{
+    --bg-color : linear-gradient(45deg , #fa013f , #49266b);
+    --primary-div : #ffffff;
+    --input-div-border : 5px solid #000000;
+    --Button-Primary-bg-color : #FFA500;
+    --Button-Secondary-bg-color : #C0C6C8;
+    --Button-Numerical-bg-color : #686A6C;
+
+    --primary-div-border-radius : 10px;
+    --input-div-border-radius : 10px;
+    --button-div-border-radius : 25px;
+
+    --white : #ffffff;
+    --black : #000000;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'tektur';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-div);
+    padding: 30px;
+    border-radius: var(--primary-div-border-radius);
+    box-shadow: 20px 20px 10px var(--black);
+}
+
+.clac-header{
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.clac-header h2{
+    font-size: 36px;
+}
+
+.clac-header p{
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.calc-input{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#calcInput{
+    padding: 10px;
+    border: var(--input-div-border);
+    border-radius: var(--input-div-border-radius);
+    font-size: 20px;
+}
+
+.calc-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calcButton-row-1 , .calcButton-row-2 , .calcButton-row-3 , .calcButton-row-4 , .calcButton-row-5{
+    margin: 5px;
+    padding: 20px;
+    border-radius: var(--button-div-border-radius);
+    font-size: 26px;
+    background-color: var(--Button-Numerical-bg-color);
+    color: var(--white);
+    text-shadow: 2px 2px 5px var(--black);
+    cursor: pointer;
+}
+
+#button0 , #clear{
+    width: 140px;
+}
+
+#buttonequal , #buttonplus , #buttonminus , #buttonmultiply , #buttondivide{
+    background-color: var(--Button-Primary-bg-color);
+    color: var(--white);
+}
+
+#buttonpercentage , #buttonclear{
+    background-color: var(--Button-Secondary-bg-color);
+    color: var(--black);
+    text-shadow: 2px 2px 5px var(--white);
+}
+
+.socials{
+    position: absolute; 
+    bottom: 0px;
+    right: 0px;
+    margin: 20px;
+    margin-right: 5px;
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: var(--input-div-border-radius);
+}
