@@ -1,3 +1,4 @@
+// Importing Elements based on ID
 let equal = document.getElementById('buttonequal');
 let clear = document.getElementById('buttonclear');
 let input = document.getElementById('calcInput');
@@ -16,9 +17,12 @@ let butttonMinus = document.getElementById('buttonminus')
 let butttonDivide = document.getElementById('buttondivide');
 let butttonMultiply = document.getElementById('buttonmultiply');
 
+// Deifing Result (To be used for Evaluate Function)
 let result = '';
 
+// Creating Evaluate Function
 function Evaluate(){
+    // Using the Result
     let result = eval(input.value);
     if(result === undefined){
         input.value = 'Error404 T_T';
@@ -27,6 +31,7 @@ function Evaluate(){
     }
 }
 
+// Creating Clear Function
 function Clear(){
     input.value = '';
 }

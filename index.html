@@ -4,55 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Linking CSS File for Styling -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Adding Title and Title Icon -->
     <title>Calculator | Varad Sandeep Naik</title>
     <link rel="shortcut icon" href="Resources/Images/Calculator Icon.png" type="image/png">
 </head>
 <body>
+    <!-- Creating Main Div that will house all the elements -->
     <div class="main-div">
+        <!-- Creating the Calculator Header -->
         <div class="clac-header">
             <h2>Calculator(V1)</h2>
             <p>By Varad Sandeep Naik</p>
         </div>
+        <!-- Creating the Input tab for the Calaculator -->
         <div class="calc-input">
             <input type="text" name="calcinput" id="calcInput" placeholder="Doing Mathematical Stuff" autofocus>
         </div>
+        <!-- Creating Buttons For the Calculator -->
         <div class="calc-buttons">
             <div class="calc-row-1">
+                <!-- Creating Clear Button -->
                 <button class="calcButton-row-1" id="buttonclear" onclick="Clear()" type="button">CLEAR</button>
+                <!-- Creating Percentage Button -->
                 <button class="calcButton-row-1" id="buttonpercentage" onclick="ButtonPercentage()" type="button">%</button>
+                <!-- Creating Division Button -->
                 <button class="calcButton-row-1" id="buttondivide" onclick="ButtonDivide()" type="button">÷</button>
             </div>
             <div class="calc-row-2">
                 <button class="calcButton-row-2" id="button7" onclick="Button7()" type="button">7</button>
                 <button class="calcButton-row-2" id="button8" onclick="Button8()" type="button">8</button>
                 <button class="calcButton-row-2" id="button9" onclick="Button9()" type="button">9</button>
+                <!-- Creating Multiplication Button -->
                 <button class="calcButton-row-2" id="buttonmultiply" onclick="ButtonMultiply()" type="button">×</button>
             </div>
             <div class="calc-row-3">
                 <button class="calcButton-row-3" id="button4" onclick="Button4()" type="button">4</button>
                 <button class="calcButton-row-3" id="button5" onclick="Button5()" type="button">5</button>
                 <button class="calcButton-row-3" id="button6" onclick="Button6()" type="button">6</button>
+                <!-- Creating Subtraction Button -->
                 <button class="calcButton-row-3" id="buttonminus" onclick="ButtonMinus()" type="button">-</button>
             </div>
             <div class="calc-row-4">
                 <button class="calcButton-row-4" id="button1" onclick="Button1()" type="button">1</button>
                 <button class="calcButton-row-4" id="button2" onclick="Button2()" type="button">2</button>
                 <button class="calcButton-row-4" id="button3" onclick="Button3()" type="button">3</button>
+                <!-- Creating Addition Button -->
                 <button class="calcButton-row-4" id="buttonplus" onclick="ButtonPlus()" type="button">+</button>
             </div>
             <div class="calc-row-5">
                 <button class="calcButton-row-5" id="button0" onclick="Button0()" type="button">0</button>
                 <button class="calcButton-row-5" id="button." onclick="ButtonDecimal()" type="button">.</button>
+                <!-- Creating EValuation Button -->
                 <button class="calcButton-row-5" id="buttonequal" onclick="Evaluate()" type="button" >=</button>
             </div>
         </div>
     </div>
+    <!-- Creating a Div to Hold Social Anchors -->
     <div class="socials">
+        <!-- Social Anchor for Github -->
         <a href="https://github.com/Hellacious1702" class="social"><img src="Resources/Images/GithubLogo.png" width="40px"></a>
+        <!-- Social Anchor For Instagram -->
         <a href="https://instagram.com/varad5878?igshid=OGQ5ZDc2ODk2ZA==" class="social"><img src="Resources/Images/InstagramLogo.png" width="40px"></a>
     </div>
+    <!-- Linking JavaScript File -->
     <script src="script.js"></script>
 </body>
 </html>

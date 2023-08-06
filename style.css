@@ -1,5 +1,8 @@
+/* Importing font "tektur" from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=REM:wght@300&family=Tektur:wght@800&display=swap');
+/* Root */
 :root{
+    /* Defining Section Based Color Pallete */
     --bg-color : linear-gradient(45deg , #fa013f , #49266b);
     --primary-div : #ffffff;
     --input-div-border : 5px solid #000000;
@@ -7,10 +10,12 @@
     --Button-Secondary-bg-color : #C0C6C8;
     --Button-Numerical-bg-color : #686A6C;
 
+    /* Defining Basic Properties */
     --primary-div-border-radius : 10px;
     --input-div-border-radius : 10px;
     --button-div-border-radius : 25px;
 
+    /* Defining Basic Colors */
     --white : #ffffff;
     --black : #000000;
 }
@@ -21,6 +26,7 @@
     font-family: 'tektur';
 }
 
+/* Styling Main Body */
 body{
     display: flex;
     justify-content: center;
@@ -30,6 +36,7 @@ body{
     height: 100vh;
 }
 
+/* Styling Main Division */
 .main-div{
     display: flex;
     flex-direction: column;
@@ -41,26 +48,31 @@ body{
     box-shadow: 20px 20px 10px var(--black);
 }
 
+/* Styling Header */
 .clac-header{
     margin-bottom: 20px;
     text-align: center
 }
 
+/* Styling Header 2 for Header */
 .clac-header h2{
     font-size: 36px;
 }
 
+/* Styling Paragraph for Header */
 .clac-header p{
     font-size: 16px;
     font-style: italic;
     text-decoration: underline;
 }
 
+/* Styling Input Tab Section*/
 .calc-input{
     margin: 10px;
     margin-bottom: 20px;
 }
 
+/* Styling Input Tab */
 #calcInput{
     padding: 10px;
     border: var(--input-div-border);
@@ -68,6 +80,7 @@ body{
     font-size: 20px;
 }
 
+/* Styling Calculator Button (Position)*/
 .calc-buttons{
     display: flex;
     flex-direction: column;
@@ -75,6 +88,7 @@ body{
     align-items: center;
 }
 
+/* Styling Calculator Button */
 .calcButton-row-1 , .calcButton-row-2 , .calcButton-row-3 , .calcButton-row-4 , .calcButton-row-5{
     margin: 5px;
     padding: 20px;
@@ -86,21 +100,25 @@ body{
     cursor: pointer;
 }
 
+/* Styling Clear and (0) Button */
 #button0 , #clear{
     width: 140px;
 }
 
+/* Styling Operational Button */
 #buttonequal , #buttonplus , #buttonminus , #buttonmultiply , #buttondivide{
     background-color: var(--Button-Primary-bg-color);
     color: var(--white);
 }
 
+/* Styling Clear and Percentage Button */
 #buttonpercentage , #buttonclear{
     background-color: var(--Button-Secondary-bg-color);
     color: var(--black);
     text-shadow: 2px 2px 5px var(--white);
 }
 
+/* Styling Socials Section */
 .socials{
     position: absolute; 
     bottom: 0px;
