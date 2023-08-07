@@ -98,6 +98,19 @@ body{
     border-radius: var(--input-div-border-radius);
     font-size: 20px;
     box-shadow: var(--box-shadow);
+    animation: calcinput 2s ease-in 1;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes calcinput {
+    from{
+        visibility: visible;
+        width: 0%;
+    }to{
+        visibility: visible;
+        width: 73%;
+    }
 }
 
 /* Styling Copy Button */
