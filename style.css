@@ -162,3 +162,81 @@ body{
     padding: 10px;
     border-radius: var(--input-div-border-radius);
 }
+
+/* CSS for Screen With Max 844px(iPhone 12 Pro Screen) */
+@media(max-width: 844px){
+
+    /* Styling Main Division */
+    .main-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-div);
+        padding: 30px;
+        border-radius: var(--primary-div-border-radius);
+        box-shadow: 20px 20px 10px var(--black);
+        max-width: 300px;
+    }
+
+    /* Styling Header */
+    .clac-header{
+        margin-bottom: 10px;
+        text-align: center
+    }
+    
+    /* Styling Header 2 for Header */
+    .clac-header h2{
+        font-size: 30px;
+    }
+    
+    /* Styling Paragraph for Header */
+    .clac-header p{
+        font-size: 13px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    /* Styling Input Tab */
+    #calcInput{
+        padding: 10px;
+        max-width: 200px;
+        border: var(--input-div-border);
+        border-radius: var(--input-div-border-radius);
+        font-size: 20px;
+        box-shadow: var(--box-shadow);
+    }
+
+    /* Styling Input placeholder */
+    #calcInput::placeholder{
+        font-size: 16px;
+    }
+
+    /* Styling Input Tab Section*/
+    .calc-input{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Styling Calculator Button */
+    .calcButton-row-1 , .calcButton-row-2 , .calcButton-row-3 , .calcButton-row-4 , .calcButton-row-5{
+        margin: 5px;
+        padding: 10px 20px;
+        border-radius: var(--button-div-border-radius);
+        font-size: 20px;
+        background-color: var(--Button-Numerical-bg-color);
+        color: var(--white);
+        text-shadow: 2px 2px 5px var(--black);
+        cursor: pointer;
+        border: var(--button-border);
+        box-shadow: var(--box-shadow);
+        max-width: 600px;
+    }
+
+    /* Styling Clear and (0) Button */
+    #button0 , #buttonclear{
+    width: 140px;
+    }
+}
