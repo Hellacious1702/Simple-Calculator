@@ -156,8 +156,8 @@ body{
     position: absolute; 
     bottom: 0px;
     right: 0px;
-    margin: 20px;
-    margin-right: 5px;
+    margin-bottom: 2%;
+    margin-right: 2%;
     background-color: var(--white);
     padding: 10px;
     border-radius: var(--input-div-border-radius);
